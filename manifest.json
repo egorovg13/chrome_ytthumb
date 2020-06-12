@@ -4,6 +4,10 @@
     "version": "0.1",
     "icons" : {"128" : "icon_128.png"},
 
+    "permissions" : [
+        "declarativeContent"
+      ],
+
     "content_scripts" : [
         {
           "matches": [
@@ -14,13 +18,21 @@
         }
       ],
 
-    "browser_action": {
-        // "default_icon": "icon.png"
-        "default_popup": "popup.html"
-      },
+    // "browser_action": {
+    //     // "default_icon": "icon.png"
+    //     "default_popup": "popup.html"
+    //   },
+
+      "page_action" :
+  {
+    "default_title" : "Test your Thumnbnail Here",
+    "default_popup": "popup.html"
+    
+  },
 
     "background": {
-        "scripts": ["background.js"]
+        "scripts": ["background.js"],
+        "persistent": false
       }
 
   }
