@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>YouTube Design test tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/popup_style.css">
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="popup_wrapper">
+
+        <h2 class="title">Test YouTube Thumbnail & Title</h2>
+
+        <div class = "selector_helper">Choose a video to edit</div>
+        <select class = "selector"> 
+            
+        </select>
+        
+        <div class="title_helper">Enter your title</div>
+
+        <input type = "text" class="title_input" placeholder = "WOW! Mentos + Cola">
+
+        <div class = 'thumbnail-preview'>
+            <div class="thumbnail_helper">Click the image to upload your thumbnail. 16:9 ratio recommended.</div>
+            <input type = 'file' id = 'thumb_input' accept='image/*'>
+            <label for="thumb_input" class='file_label'>
+                <img src = './img/Thumbnail Upload Placeholder.jpg' class='upload_image'>
+            </label>
+        </div>
+
+        <div class="upload_control">
+            <button class = 'submit' id = 'save'>SAVE</button>
+            <button class = 'submit' id = 'cancel'>CANCEL</button>
+        </div>
+
+    </div>  
+
+  </body>
+</html>
